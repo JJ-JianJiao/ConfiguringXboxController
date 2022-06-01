@@ -34,7 +34,32 @@ public class Cude : MonoBehaviour
         transform.Translate(m, Space.World);
 
         Vector2 v = new Vector2(-rotate.y, -rotate.x) * 100 * Time.deltaTime;
-        transform.Rotate(new Vector3(v.x,v.y,0));
+        transform.Rotate(new Vector3(v.x, v.y, 0));
+    }
+
+
+    private void FixedUpdate()
+    {
+        //var gamePad = Gamepad.current;
+        //if (gamePad == null) return;
+
+        //move =  gamePad.leftStick.ReadValue();
+        //Vector2 m = new Vector2(-move.x, move.y) * Time.deltaTime;
+        //transform.Translate(m, Space.World);
+
+        //rotate = gamePad.rightStick.ReadValue();
+
+        //Vector2 v = new Vector2(-rotate.y, -rotate.x) * 100 * Time.deltaTime;
+        //transform.Rotate(new Vector3(v.x, v.y, 0));
+
+        ////if (gamePad.buttonEast.isPressed) {
+        //if (gamePad.buttonEast.IsPressed()) {
+        //    TurnSmall();
+        //}
+        ////if (gamePad.buttonSouth.isPressed) {
+        //if (gamePad.buttonSouth.IsPressed()) {
+        //        Grow();
+        //}
     }
 
     void Grow() {
